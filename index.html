@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Presentador</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="toolbar">
+      <button id="prevBtn" aria-label="Anterior">&larr;</button>
+      <div class="controls">
+        <button id="addBtn" aria-label="Añadir diapositiva">+ Añadir</button>
+        <button id="delBtn" aria-label="Eliminar diapositiva">Eliminar</button>
+      </div>
+      <button id="nextBtn" aria-label="Siguiente">&rarr;</button>
+    </div>
+
+    <div id="stage">
+      <div id="slidesWrapper" class="slides-wrapper"></div>
+    </div>
+
+    <div class="footer">
+      <div id="indexDisplay">Diapositiva 1 / 1</div>
+      <div class="actions">
+        <button id="exportBtn" aria-label="Exportar">Exportar JSON</button>
+        <button id="importBtn" aria-label="Importar">Importar</button>
+        <input id="importFile" type="file" accept="application/json" style="display:none" />
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
